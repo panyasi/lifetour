@@ -321,9 +321,12 @@ a {
   font-family: PingFang SC;
   font-weight: 400;
 }
+ul {
+  list-style: none;
+}
 .hd-section {
   position: relative;
-  background: url(../images.shangde/1_01.jpg);
+  background: url(../images/1_01.jpg);
   background-repeat: no-repeat;
 }
 .hd-section .section-container {
@@ -350,9 +353,9 @@ a {
   margin-top: 5px;
 }
 .hd-section header ul li {
+  display: inline-block;
   vertical-align: middle;
   list-style: none;
-  display: inline-block;
   margin-left: 30px;
 }
 .hd-section header ul li a {
@@ -374,67 +377,69 @@ a {
   color: #e49701;
 }
 .hd-section .banner-content .title {
-  font-family: 'PingFang SC';
-  font-size: 44px;
   margin-top: 20px;
   margin-bottom: 20px;
+  font-family: 'PingFang SC';
+  font-size: 44px;
   font-weight: 300;
   color: #fff;
 }
 .hd-section .banner-content .title-desc {
-  font-size: 20px;
-  line-height: 1.5;
   margin-bottom: 60px;
+  line-height: 1.5;
+  font-size: 20px;
   color: #fff;
 }
 .hd-section .banner-content .detail-btn .learn {
   display: inline-block;
+  text-align: center;
+  margin-right: 5px;
   width: 166px;
   height: 60px;
   line-height: 60px;
   background: rgba(234, 146, 21, 0.8);
   color: #fff;
   font-size: 18px;
-  text-align: center;
   border-radius: 30px;
-  margin-right: 5px;
+}
+.hd-section .banner-content .detail-btn .learn:hover {
+  background: rgba(234, 146, 21, 0.9) !important;
+  color: #fff !important;
 }
 .hd-section .banner-content .detail-btn .consult {
   display: inline-block;
+  text-align: center;
   width: 238px;
   height: 60px;
   line-height: 60px;
   background: rgba(9, 198, 171, 0.8);
   color: #fff;
   font-size: 18px;
-  text-align: center;
   border-radius: 30px;
 }
-.hd-section .consult-btn {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
+.hd-section .banner-content .detail-btn .consult:hover {
+  background: rgba(9, 198, 171, 0.9) !important;
+  color: #fff !important;
 }
 .main-section .container .main-list {
   display: inline-block;
   text-align: center;
 }
 .main-section .container .main-list .main-item {
+  position: relative;
   display: inline-block;
   font-size: 0;
   text-align: center;
-  position: relative;
+  width: 288px;
   padding-left: 15px;
   padding-right: 15px;
   margin-top: 40px;
-  width: 288px;
 }
 .main-section .container .main-list .main-item .item-logo {
   text-align: center;
-  margin-bottom: 10px;
   width: 262px;
   height: 80px;
+  margin-bottom: 10px;
 }
 .main-section .container .main-list .main-item .item-logo img {
   width: 80px;
@@ -442,98 +447,105 @@ a {
 }
 .main-section .container .main-list .main-item .item-title {
   text-align: center;
+  height: 40px;
   font-size: 24px;
   color: #3a3a3a;
   line-height: 40px;
-  height: 40px;
+}
+.main-section .container .main-list .main-item a {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .plan-section .container {
   padding-top: 100px;
 }
 .plan-section .container .title-desc {
-  color: #EA9215;
-  font-size: 18px;
-  line-height: 1.1;
   height: 20px;
   text-align: center;
-  font-weight: 400;
   margin-bottom: 20px;
+  line-height: 1.1;
+  color: #EA9215;
+  font-size: 18px;
+  font-weight: 400;
 }
 .plan-section .container .sub-title {
+  text-align: center;
+  margin-bottom: 20px;
   font-size: 32px;
   line-height: 1.5;
   color: #000;
-  text-align: center;
-  margin-bottom: 20px;
 }
 .plan-section .container .title-explain {
+  text-align: center;
+  margin-bottom: 40px;
   font-size: 18px;
   line-height: 1.5;
   color: #828282;
-  text-align: center;
-  margin-bottom: 40px;
 }
 .plan-section .container .plan-list {
   display: inline-block;
   font-size: 0;
 }
 .plan-section .container .plan-list .plan-item {
-  display: inline-block;
   position: relative;
-  padding: 20px 0 30px;
-  color: #fff;
-  text-align: center;
-  background: #54d597;
+  display: inline-block;
   overflow: hidden;
+  text-align: center;
   width: 262px;
   height: 296px;
+  background: #54d597;
+  padding: 20px 0 30px;
+  color: #fff;
 }
 .plan-section .container .plan-list .plan-item:hover .signup {
   transform: translateY(0);
   opacity: 1;
 }
 .plan-section .container .plan-list .plan-item .logo {
-  margin: 0 auto;
   width: 42px;
   height: 40px;
+  margin: 0 auto;
 }
 .plan-section .container .plan-list .plan-item .logo img {
   width: 100%;
   height: 100%;
 }
 .plan-section .container .plan-list .plan-item .name {
-  font-size: 30px;
-  font-weight: bold;
+  height: 64px;
   padding-bottom: 12px;
   border-bottom: 1px dashed #fff;
-  height: 64px;
   line-height: 50px;
+  font-size: 30px;
+  font-weight: bold;
 }
 .plan-section .container .plan-list .plan-item .graduation {
+  padding-top: 10px;
   font-size: 22px;
   line-height: 1.5;
-  padding-top: 10px;
 }
 .plan-section .container .plan-list .plan-item .certificate {
+  height: 84px;
+  padding-top: 16px;
   font-size: 18px;
   line-height: 1.2;
-  padding-top: 16px;
-  height: 84px;
 }
 .plan-section .container .plan-list .mpa {
   position: relative;
-  background: #f1a942;
   margin-left: 40px;
+  background: #f1a942;
 }
 .plan-section .container .plan-list .mem {
   position: relative;
-  background: #e65e44;
   margin-left: 40px;
+  background: #e65e44;
 }
 .plan-section .container .plan-list .mpacc {
   position: relative;
-  background: #f8b14b;
   margin-left: 40px;
+  background: #f8b14b;
 }
 .plan-section .container .plan-list .signup {
   position: absolute;
@@ -553,111 +565,109 @@ a {
   text-align: center;
   width: 156px;
   height: 40px;
+  margin-top: 16px;
+  border-radius: 5px;
+  background: #f34444;
   color: #fff;
   font-size: 18px;
   line-height: 40px;
-  background: #f34444;
-  margin-top: 16px;
-  border-radius: 5px;
+}
+.plan-section .container .plan-list .signup a:hover {
+  text-decoration: underline;
 }
 .pick-section {
   padding-top: 120px;
 }
 .pick-section .container .title-desc {
-  color: #EA9215;
-  font-size: 18px;
-  text-align: center;
-  line-height: 1.1;
   height: 20px;
   margin-bottom: 20px;
+  text-align: center;
+  color: #EA9215;
+  font-size: 18px;
+  line-height: 1.1;
 }
 .pick-section .container .sub-title {
+  text-align: center;
+  margin-bottom: 20px;
   font-size: 32px;
   line-height: 1.5;
   color: #000;
-  text-align: center;
-  margin-bottom: 20px;
 }
 .pick-section .container .title-explain {
+  text-align: center;
+  margin-bottom: 40px;
   font-size: 18px;
   line-height: 1.5;
   color: #828282;
-  text-align: center;
-  margin-bottom: 40px;
 }
 .pick-section .container .pick-list {
   display: inline-block;
   font-size: 0;
 }
 .pick-section .container .pick-list .pick-item {
-  display: inline-block;
   position: relative;
+  display: inline-block;
+  overflow: hidden;
   width: 360px;
   height: 256px;
-  background: url(../images.shangde/yx_01.jpg);
-  background-size: 360px 256px;
-  background-repeat: no-repeat;
   margin-bottom: 30px;
-  background-position: center;
-  transition: all .3s ease;
 }
 .pick-section .container .pick-list .pick-item:hover {
-  background-size: 396px 282px;
-  background-position: center;
+  box-shadow: 0px 18px 71px -10px rgba(0, 0, 0, 0.75);
+}
+.pick-section .container .pick-list .pick-item:hover img {
+  transform: scale(1.1);
 }
 .pick-section .container .pick-list .pick-item:hover .item-title {
-  margin-top: 160px;
-  margin-bottom: 15px;
+  bottom: 55px;
+  opacity: 1;
+  text-decoration: underline;
+}
+.pick-section .container .pick-list .pick-item:hover .item-desc {
+  bottom: 15px;
+  opacity: 1;
+}
+.pick-section .container .pick-list .pick-item img {
+  width: 360px;
+  height: 256px;
+  transition: 0.5s;
 }
 .pick-section .container .pick-list .pick-item .item-title {
-  margin-top: 130px;
-  margin-bottom: 40px;
+  position: absolute;
+  text-align: center;
+  left: 20px;
+  bottom: 80px;
   font-family: "Work Sans", Arial, sans-serif;
   font-size: 30px;
   line-height: 1.1;
   font-weight: 300;
-  visibility: visible;
   color: #fff;
-  text-align: center;
 }
 .pick-section .container .pick-list .pick-item .item-desc {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  height: 24px;
+  text-align: center;
   color: #fff;
   line-height: 24px;
   font-family: "Work Sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 14px;
-  height: 24px;
-  text-align: center;
 }
 .pick-section .container .pick-list .pick-item a {
   position: absolute;
-  bottom: 0;
+  left: 0;
   width: 100%;
   height: 100%;
 }
 .pick-section .container .pick-list .rmu {
-  background: url(../images.shangde/yx_02.jpg);
-  background-size: 360px 256px;
   margin-left: 45px;
   margin-right: 45px;
-}
-.pick-section .container .pick-list .bsu {
-  background: url(../images.shangde/yx_03.jpg);
-  background-size: 360px 256px;
-}
-.pick-section .container .pick-list .wmu {
-  background: url(../images.shangde/yx_04.jpg);
-  background-size: 360px 256px;
 }
 .pick-section .container .pick-list .blu {
-  background: url(../images.shangde/yx_05.jpg);
-  background-size: 360px 256px;
   margin-left: 45px;
   margin-right: 45px;
-}
-.pick-section .container .pick-list .ycu {
-  background: url(../images.shangde/yx_06.jpg);
-  background-size: 360px 256px;
 }
 .pick-section .container .other-btn {
   text-align: center;
@@ -667,31 +677,31 @@ a {
   display: inline-block;
   width: 208px;
   height: 60px;
+  border-radius: 30px;
+  background: #EA9215;
   color: #fff;
   font-size: 16px;
   font-weight: 400;
-  background: #EA9215;
   line-height: 60px;
-  border-radius: 30px;
 }
 .app-section {
   background: #e8e8e0;
   padding-top: 64px;
 }
 .app-section .container .title-desc {
-  color: #EA9215;
-  font-size: 18px;
   text-align: center;
-  line-height: 1.1;
   height: 20px;
   margin-bottom: 20px;
+  color: #EA9215;
+  font-size: 18px;
+  line-height: 1.1;
 }
 .app-section .container .sub-title {
+  text-align: center;
+  margin-bottom: 40px;
   font-size: 32px;
   line-height: 1.5;
   color: #000;
-  text-align: center;
-  margin-bottom: 40px;
 }
 .app-section .container .app-logo {
   width: 974px;
@@ -706,37 +716,38 @@ a {
   padding-top: 40px;
 }
 .jobmaster-section .container .title-desc {
-  color: #EA9215;
-  font-size: 18px;
-  text-align: center;
-  line-height: 1.1;
   height: 20px;
   margin-bottom: 20px;
+  text-align: center;
+  color: #EA9215;
+  font-size: 18px;
+  line-height: 1.1;
 }
 .jobmaster-section .container .sub-title {
+  text-align: center;
+  margin-bottom: 20px;
   font-size: 32px;
   line-height: 1.5;
   color: #000;
-  text-align: center;
-  margin-bottom: 20px;
 }
 .jobmaster-section .container .title-explain {
+  text-align: center;
+  margin-bottom: 40px;
   font-size: 18px;
   line-height: 1.5;
   color: #828282;
-  text-align: center;
-  margin-bottom: 40px;
 }
 .jobmaster-section .container .jobmaster-list {
   display: inline-block;
-  font-size: 0;
   margin-bottom: 30px;
+  font-size: 0;
 }
 .jobmaster-section .container .jobmaster-list .jobmaster-item {
   display: inline-block;
+  vertical-align: top;
+  width: 389px;
   padding-left: 15px;
   padding-right: 15px;
-  width: 389px;
 }
 .jobmaster-section .container .jobmaster-list .jobmaster-item .logo {
   position: relative;
@@ -771,19 +782,28 @@ a {
   color: #828282;
 }
 .jobmaster-section .container .jobmaster-list .jobmaster-item .item-content .description {
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.7;
   color: #828282;
-  margin-bottom: 20px;
+}
+.jobmaster-section .container .jobmaster-list .jobmaster-item .item-content:hover .name {
+  text-decoration: underline;
+}
+.jobmaster-section .container .jobmaster-list .jobmaster-item .item-content:hover .description {
+  text-decoration: underline;
+}
+.jobmaster-section .container .jobmaster-list .jobmaster-item:hover {
+  box-shadow: 0px 10px 27px -20px rgba(0, 0, 0, 0.75);
 }
 .jobmaster-section .container .jobmaster-list .jobmaster-item .btn {
   display: inline-block;
+  height: 42px;
   padding: 10px 22px;
+  border-radius: 30px;
   background: #EA9215;
   font-size: 16px;
   color: #fff;
-  height: 42px;
-  border-radius: 30px;
 }
 .faq-section {
   background: #e0e0e0;
@@ -801,8 +821,8 @@ a {
 .faq-section .container .faq-content {
   display: inline-block;
   vertical-align: top;
-  padding-left: 30px;
   width: 390px;
+  padding-left: 30px;
 }
 .faq-section .container .faq-content .sub-title {
   text-align: center;
@@ -812,123 +832,110 @@ a {
   color: #000;
   line-height: 50px;
 }
-.faq-section .container .faq-content .question-y {
+.faq-section .container .faq-content a {
   display: inline-block;
+  text-align: left;
+  margin-top: 12px;
   font-size: 18px;
   color: #282828;
-  margin-top: 12px;
   line-height: 18px;
-  text-align: left;
 }
-.faq-section .container .faq-content .question-y span {
+.faq-section .container .faq-content a span {
   display: inline-block;
-  font-size: 12px;
+  text-align: center;
   width: 18px;
   height: 18px;
-  text-align: center;
-  line-height: 18px;
   background: #dba329;
   margin-right: 12px;
-}
-.faq-section .container .faq-content .question-b {
-  display: inline-block;
-  font-size: 18px;
-  color: #282828;
-  margin-top: 12px;
   line-height: 18px;
-  text-align: left;
-}
-.faq-section .container .faq-content .question-b span {
-  display: inline-block;
   font-size: 12px;
-  width: 18px;
-  height: 18px;
-  text-align: center;
-  line-height: 18px;
+}
+.faq-section .container .faq-content a:hover {
+  text-decoration: underline;
+}
+.faq-section .container .faq-content a:nth-child(2n) span {
   background: #090807;
   color: #fff;
-  margin-right: 12px;
 }
 .situation-section {
+  position: relative;
   margin-top: 80px;
+  background: url(../images/1_01.jpg);
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
-  position: relative;
-  background: url(../images.shangde/1_01.jpg) no-repeat;
 }
 .situation-section .container {
   padding: 3em 0;
 }
 .situation-section .container .situation-item {
-  text-align: center;
   display: inline-block;
+  text-align: center;
   width: 288.5px;
   padding-left: 15px;
   padding-right: 15px;
 }
 .situation-section .container .situation-item .num {
+  width: 100%;
+  height: 74px;
+  margin-bottom: .3em;
   font-size: 44px;
   color: #fff;
   font-family: "Work Sans", Arial, sans-serif;
-  width: 100%;
-  height: 74px;
   font-weight: 400;
-  margin-bottom: .3em;
 }
 .situation-section .container .situation-item .name {
+  margin-bottom: 2em;
   color: #fff;
   font-size: 14px;
-  letter-spacing: 5px;
-  margin-bottom: 2em;
 }
 .pg-ft .container {
   padding-top: 64px;
 }
 .pg-ft .container .company {
-  width: 292px;
-  padding: 0 15px;
   display: inline-block;
   vertical-align: top;
+  width: 292px;
+  padding: 0 15px;
   margin-right: 100px;
 }
 .pg-ft .container .company .name {
+  margin-bottom: 20px;
   color: #000;
   font-family: "Work Sans", Arial, sans-serif;
   font-weight: 400;
-  margin-bottom: 20px;
   font-size: 18px;
 }
 .pg-ft .container .company .address {
+  margin-bottom: 20px;
   font-family: "microsoft yahei", Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
   color: #828282;
-  margin-bottom: 20px;
 }
 .pg-ft .container .company .onetoone {
+  margin-bottom: 20px;
   font-family: "microsoft yahei", Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
   color: #828282;
-  margin-bottom: 20px;
 }
 .pg-ft .container .item {
-  width: 196px;
-  padding: 0 15px;
   display: inline-block;
   vertical-align: top;
+  width: 196px;
+  padding: 0 15px;
 }
 .pg-ft .container .item .title {
+  margin-bottom: 20px;
   color: #000;
   font-family: "Work Sans", Arial, sans-serif;
   font-weight: 400;
-  margin-bottom: 20px;
   font-size: 18px;
 }
-.pg-ft .container .item .description-1 {
+.pg-ft .container .item a {
   display: block;
   font-family: "microsoft yahei", Arial, sans-serif;
   font-weight: 400;
@@ -936,14 +943,8 @@ a {
   line-height: 27px;
   color: #828282;
 }
-.pg-ft .container .item .description-2 {
-  display: block;
-  font-family: "microsoft yahei", Arial, sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 27px;
-  color: #828282;
-  margin-bottom: 20px;
+.pg-ft .container .item a:hover {
+  text-decoration: underline;
 }
 .pg-ft .container .copyright {
   text-align: center;
@@ -956,4 +957,149 @@ a {
 }
 .pg-ft .container .copyright a {
   color: #EA9215;
+}
+.rightfix {
+  position: fixed;
+  top: 50px;
+  right: 0;
+  width: 115px;
+  background: #f64747;
+}
+.rightfix .fix-title {
+  width: 100%
+        height:40px;
+  text-align: center;
+  box-shadow: 0px 3px 6px #562926;
+  background: #ee2929;
+  line-height: 40px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+.rightfix .fix-title span {
+  color: #ffd800;
+}
+.rightfix .sub-title {
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  margin-bottom: 5px;
+  box-shadow: 0 3px 5px #582a27;
+  margin-top: 10px;
+  background: #ee2929;
+  color: #fff;
+  line-height: 20px;
+  font-size: 10px;
+}
+.rightfix .consult-detail a {
+  display: block;
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  font-size: 12px;
+  font-family: 创艺简标宋;
+  line-height: 20px;
+}
+.rightfix .consult-detail a:hover {
+  text-decoration: underline;
+}
+.rightfix form .info {
+  text-align: center;
+}
+.rightfix form .info .info-title {
+  text-align: center;
+  margin-bottom: 22px;
+  margin-top: 10px;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 1.1;
+}
+.rightfix form .info .entry {
+  display: block;
+  height: 34px;
+  width: 110px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #040000;
+  border-radius: 2px;
+  padding-left: 5px;
+  font-size: 12px;
+}
+.rightfix form .info .apply-btn {
+  display: block;
+  width: 115px;
+  height: 34px;
+  background: #ffd800;
+  margin-top: 5px;
+  color: #000;
+  font-size: 15px;
+}
+.leftfix {
+  position: fixed;
+  left: 0;
+  top: 50px;
+  width: 135px;
+  background: #3fb3f9;
+  padding-top: 25px;
+  border-radius: 3px;
+  font-family: "Microsoft YaHei", Arial;
+}
+.leftfix .fix-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 20px;
+}
+.leftfix .countdown {
+  width: 135px;
+  height: 32px;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #fff;
+}
+.leftfix .countdown span {
+  background: #272636;
+  padding: 3px 12px;
+  border-radius: 3px;
+  font-size: 24px;
+  color: #fff;
+}
+.leftfix .fix-content li {
+  position: relative;
+  width: 123px;
+  padding-left: 12px;
+  font-family: "微软雅黑";
+  list-style: none;
+}
+.leftfix .fix-content li a {
+  display: block;
+  text-align: left;
+  height: 32px;
+  border-bottom: #3a97d2 solid 1px;
+  font-size: 13px;
+  color: #fff;
+  text-decoration: none;
+  line-height: 32px;
+}
+.leftfix .fix-content li a span {
+  color: #272636;
+  font-weight: 600;
+  font-size: 15px;
+}
+.leftfix .fix-content li a:hover {
+  color: #ffe71c;
+  text-decoration: underline;
+}
+.leftfix .fix-content li .leftfix-item-chidren ul li a {
+  color: #a8d8f5;
+  font-size: 10px;
+  display: block;
+}
+.leftfix .fix-content li .leftfix-item-chidren ul .active a {
+  color: red;
+  display: block;
 }
